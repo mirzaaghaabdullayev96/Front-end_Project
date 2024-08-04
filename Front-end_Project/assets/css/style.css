@@ -488,3 +488,23 @@
   flex-wrap: wrap;
   margin: 25px 0 33px;
 }
+
+.form-carousel {
+  display: flex !important;
+  background-color: #fff;
+  max-width: 450px !important;
+  border-radius: 50px;
+  position: relative;
+  z-index: 4;
+}
+
+.carousel-btn {
+  border: 0;
+  border-radius: 50px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #3bb77e;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-family: "Quicksand";
+}

@@ -1,0 +1,16 @@
+{
+  "sliders": [
+    {
+      "id": 1,
+      "header": "Ya prodayu chto to",
+      "paragraph": "est skidka bolshaya",
+      "image_src": "./assets/imgs/slider/slider-2.png"
+    },
+    {
+      "id": 2,
+      "header": "Ya sadasd chto to",
+      "paragraph": "ddddd skidka bolshaya",
+      "image_src": "https://imgd.aeplcdn.com/370x208/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-109.jpeg?isig=0&q=80"
+    }
+  ]
+}
