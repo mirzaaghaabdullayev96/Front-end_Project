@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@400;700&family=Mulish:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@400;700&family=Mulish:wght@400;700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/all_style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Nest - Multipurpose eCommerce HTML Template</title>
+  </head>
+
+  <body>
+    <!-- Modal -->
+    <div></div>
+
+    <header>
+      <!-- header-top -->
+      <div
+        class="header-top header-top-ptb-1 d-none d-lg-block header-main-container"
+      >
+        <div class="container" style="max-width: 1610px !important">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <div class="header-info">
+                <ul>
+                  <li><a href="page-about.htlm">About Us</a></li>
+                  <li><a href="page-account.html">My Account</a></li>
+                  <li><a href="shop-wishlist.html">Wishlist</a></li>
+                  <li><a href="shop-order.html">Order Tracking</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6"></div>
+            <div class="col-3">
+              <div
+                class="header-info header-info-right"
+                style="display: flex; justify-content: flex-end"
+              >
+                <ul>
+                  <li style="color: #7e7e7e">
+                    Need help? Call Us:
+                    <strong
+                      class="text-brand"
+                      style="color: #3bb77e !important; font-weight: 600"
+                    >
+                      + 1800 900</strong
+                    >
+                  </li>
+                  <li>
+                    <a class="language-dropdown-active" href="#"
+                      >English <i class="fi-rs-angle-small-down"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="language-dropdown-active" href="#"
+                      >USD <i class="fi-rs-angle-small-down"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header-middle -->
+      <div class="header-middle header-middle-ptb-1 d-none d-lg-block">
+        <div class="container" style="max-width: 1610px !important">
+          <div class="header-wrap" style="display: flex; align-items: center">
+            <div class="logo logo-width-1" style="margin-right: 70px">
+              <a href="index.html"
+                ><img
+                  src="assets/imgs/theme/different_stuff/logo.svg"
+                  style="width: 180px"
+                  alt="logo"
+              /></a>
+            </div>
+            <div class="header-right" style="margin-right: 50px; display: flex">
+              <div class="search-style-2" style="padding-right: 70px">
+                <form action="#">
+                  <div class="search-container" style="width: 700px">
+                    <select style="font-size: 14px; font-family: 'Quicksand'">
+                      <option>All Categories</option>
+                    </select>
+                    <input type="text" placeholder="Search for items..." />
+                    <button type="submit">
+                      <img
+                        src="assets/imgs/theme/icons/search.png"
+                        style="margin-right: -10px"
+                        alt="Search"
+                      />
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <div
+                class="header-action-right"
+                style="display: flex; margin-left: 22px"
+              >
+                <div
+                  class="icons-bar"
+                  style="justify-content: center; align-items: center"
+                >
+                  <div class="location">
+                    <img
+                      src="assets/imgs/theme/icons/pin-location.png"
+                      alt="Location"
+                      style="width: 15px"
+                    />
+                    <select>
+                      <option>Your Location</option>
+                    </select>
+                  </div>
+                  <div class="icon-item">
+                    <img
+                      src="/assets/imgs/theme/icons/icon-compare.svg"
+                      alt="Compare"
+                    />
+                    <span>Compare</span>
+                  </div>
+                  <div class="icon-item">
+                    <img
+                      src="/assets/imgs/theme/icons/icon-heart.svg"
+                      alt="Wishlist"
+                    />
+                    <span>Wishlist</span>
+                  </div>
+                  <div class="icon-item">
+                    <img
+                      src="/assets/imgs/theme/icons/icon-cart.svg"
+                      alt="Cart"
+                    />
+                    <span>Cart</span>
+                  </div>
+                  <div class="icon-item">
+                    <img
+                      src="/assets/imgs/theme/icons/icon-user.svg"
+                      alt="Account"
+                    />
+                    <span>Account</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header-bottom -->
+      <div
+        class="header-bottom header-bottom-bg-color sticky-bar"
+        style="border-bottom: 1px solid #eee; border-top: 1px solid #eee"
+      >
+        <div class="container" style="max-width: 1610px !important">
+          <div class="navbar">
+            <div class="navbar-left">
+              <a href="#" class="browse-categories"> Browse All Categories </a>
+              <a href="#">Deals</a>
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Shop</a>
+              <a href="#">Vendors</a>
+              <a href="#">Mega menu</a>
+              <a href="#">Blog</a>
+              <a href="#">Pages</a>
+              <a href="#">Contact</a>
+            </div>
+            <div class="navbar-right">
+              <div class="support">
+                <img
+                  src="assets/imgs/theme/icons/icon-headphone.svg"
+                  alt="Support"
+                />
+                <div>
+                  <div class="support-number">1900 - 888</div>
+                  <div class="support-text">24/7 Support Center</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main style="min-height: 1500px"></main>
+
+    <footer>
+      <!-- top section -->
+      <section style="margin-bottom: 15px !important">
+        <div class="container" style="max-width: 1610px !important">
+          <div class="row">
+            <div class="col-12">
+              <div
+                class="position-relative newsletter-inner"
+                id="top-section-div"
+              >
+                <div class="newsletter-content">
+                  <h2
+                    class="mb-20"
+                    style="
+                      font-size: 40px;
+                      margin-bottom: 20px !important;
+                      font-weight: 700;
+                      font-family: 'Quicksand';
+                    "
+                  >
+                    Stay home &amp; get your daily <br />
+                    needs from our shop
+                  </h2>
+                  <p
+                    class="mb-45"
+                    style="
+                      font-size: 18px;
+                      margin-bottom: 45px !important;
+                      color: #7e7e7e;
+                      font-family: 'Lato';
+                    "
+                  >
+                    Start You'r Daily Shopping with
+                    <span class="text-brand" style="color: #3bb77e !important"
+                      >Nest Mart</span
+                    >
+                  </p>
+                  <form
+                    class="form-subcriber d-flex"
+                    style="
+                      display: flex !important;
+                      background-color: #fff;
+                      max-width: 450px !important;
+                      border-radius: 50px;
+                      position: relative;
+                      z-index: 4;
+                    "
+                  >
+                    <input
+                      type="email"
+                      placeholder="Your emaill address"
+                      id="subscribe-input"
+                    />
+                    <button
+                      class="btn"
+                      type="submit"
+                      style="
+                        border: 0;
+                        border-radius: 50px;
+                        font-weight: 700;
+                        color: #ffffff;
+                        background-color: #3bb77e;
+                        padding: 15px 40px;
+                        font-size: 16px;
+                        font-family: 'Quicksand';
+                      "
+                    >
+                      Subscribe
+                    </button>
+                  </form>
+                </div>
+                <img
+                  src="assets/imgs/banners/banner-9.png"
+                  alt="newsletter"
+                  id="guy-with-vegetables"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- middle section -->
+      <section style="padding: 25px 0">
+        <div class="container" style="max-width: 1610px !important">
+          <div class="row">
+            <div class="col-lg-1-5 col-md-4 col-12" style="width: 20%">
+              <div
+                class="banner-left-icon d-flex align-items-center explanation-div"
+                style="visibility: visible"
+              >
+                <div class="banner-icon">
+                  <img src="assets/imgs/theme/icons/icon-1.svg" alt="" />
+                </div>
+                <div class="banner-text">
+                  <h3 class="icon-box-title">Best prices &amp; offers</h3>
+                  <p>Orders $50 or more</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-1-5 col-md-4 col-12" style="width: 20%">
+              <div
+                class="banner-left-icon d-flex align-items-center explanation-div"
+                style="visibility: visible"
+              >
+                <div class="banner-icon">
+                  <img src="assets/imgs/theme/icons/icon-2.svg" alt="" />
+                </div>
+                <div class="banner-text">
+                  <h3 class="icon-box-title">Free delivery</h3>
+                  <p>24/7 amazing services</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-1-5 col-md-4 col-12" style="width: 20%">
+              <div
+                class="banner-left-icon d-flex align-items-center explanation-div"
+                style="visibility: visible"
+              >
+                <div class="banner-icon">
+                  <img src="assets/imgs/theme/icons/icon-3.svg" alt="" />
+                </div>
+                <div class="banner-text">
+                  <h3 class="icon-box-title">Great daily deal</h3>
+                  <p>When you sign up</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-1-5 col-md-4 col-12" style="width: 20%">
+              <div
+                class="banner-left-icon d-flex align-items-center explanation-div"
+                style="visibility: visible"
+              >
+                <div class="banner-icon">
+                  <img src="assets/imgs/theme/icons/icon-4.svg" alt="" />
+                </div>
+                <div class="banner-text">
+                  <h3 class="icon-box-title">Wide assortment</h3>
+                  <p>Mega Discounts</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-1-5 col-md-4 col-12" style="width: 20%">
+              <div
+                class="banner-left-icon d-flex align-items-center explanation-div"
+                style="visibility: visible"
+              >
+                <div class="banner-icon">
+                  <img src="assets/imgs/theme/icons/icon-5.svg" alt="" />
+                </div>
+                <div class="banner-text">
+                  <h3 class="icon-box-title">Easy returns</h3>
+                  <p>Within 30 days</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- bottom section -->
+      <section
+        class="section-padding footer-mid"
+        style="padding: 25px 0"
+      >
+        <div
+          class="container"
+          style="
+            padding-top: 15px;
+            padding-bottom: 20px;
+            max-width: 1610px !important;
+          "
+        >
+          <div class="row">
+            <div class="col">
+              <div
+                class="widget-about wow"
+                style="visibility: visible; min-width: 300px; font-size: 15px"
+              >
+                <div class="logo" style="margin-bottom: 30px !important">
+                  <a href="index.html" style="margin-bottom: 15px !important"
+                    ><img
+                      src="/assets/imgs/theme/different_stuff/logo.svg"
+                      alt="logo"
+                      style="margin-bottom: 15px !important"
+                  /></a>
+                  <p
+                    class="font-lg text-heading"
+                    style="
+                      font-size: 17px;
+                      color: #253d4e;
+                      font-weight: 400;
+                      line-height: 24px;
+                      font-family: 'Lato';
+                    "
+                  >
+                    Awesome grocery store website template
+                  </p>
+                </div>
+                <ul class="contact-information">
+                  <li style="line-height: 1.5">
+                    <img
+                      src="assets/imgs/theme/icons/icon-location.svg"
+                      alt=""
+                    /><strong>Address: </strong>
+                    <span
+                      >5171 W Campbell Ave undefined Kent, Utah 53127 United
+                      States</span
+                    >
+                  </li>
+                  <li>
+                    <img
+                      src="assets/imgs/theme/icons/icon-contact.svg"
+                      alt=""
+                    /><strong>Call Us:</strong
+                    ><span>(+91) - 540-025-124553</span>
+                  </li>
+                  <li>
+                    <img
+                      src="assets/imgs/theme/icons/icon-email-2.svg"
+                      alt=""
+                    /><strong>Email:</strong><span>sale@Nest.com</span>
+                  </li>
+                  <li style="margin-bottom: 0px !important">
+                    <img
+                      src="assets/imgs/theme/icons/icon-clock.svg"
+                      alt=""
+                    /><strong>Hours:</strong
+                    ><span>10:00 - 18:00, Mon - Sat</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-link-widget col wow">
+              <h4 class="widget-title">Company</h4>
+              <ul class="footer-list">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Support Center</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-link-widget col wow">
+              <h4 class="widget-title">Account</h4>
+              <ul class="footer-list">
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">View Cart</a></li>
+                <li><a href="#">My Wishlist</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="#">Help Ticket</a></li>
+                <li><a href="#">Shipping Details</a></li>
+                <li><a href="#">Compare products</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-link-widget col wow">
+              <h4 class="widget-title">Corporate</h4>
+              <ul class="footer-list">
+                <li><a href="#">Become a Vendor</a></li>
+                <li><a href="#">Affiliate Program</a></li>
+                <li><a href="#">Farm Business</a></li>
+                <li><a href="#">Farm Careers</a></li>
+                <li><a href="#">Our Suppliers</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Promotions</a></li>
+              </ul>
+            </div>
+            <div class="footer-link-widget col wow">
+              <h4 class="widget-title">Popular</h4>
+              <ul class="footer-list">
+                <li><a href="#">Milk &amp; Flavoured Milk</a></li>
+                <li><a href="#">Butter and Margarine</a></li>
+                <li><a href="#">Eggs Substitutes</a></li>
+                <li><a href="#">Marmalades</a></li>
+                <li><a href="#">Sour Cream and Dips</a></li>
+                <li><a href="#">Tea &amp; Kombucha</a></li>
+                <li><a href="#">Cheese</a></li>
+              </ul>
+            </div>
+
+            <div
+              class="footer-link-widget widget-install-app col wow"
+              style="margin-right: 0px !important"
+            >
+              <h4 class="widget-title">Install App</h4>
+              <p class="">From App Store or Google Play</p>
+              <div class="download-app">
+                <a href="#" style="margin-right: 12px"
+                  ><img
+                    class="active"
+                    src="assets/imgs/theme/different_stuff/app-store.jpg"
+                    alt=""
+                /></a>
+                <a href="#" style="margin-right: 12px"
+                  ><img
+                    src="assets/imgs/theme/different_stuff/google-play.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <p style="margin-bottom: 20px">Secured Payment Gateways</p>
+              <img
+                class=""
+                src="assets/imgs/theme/different_stuff/payment-method.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- last section of footer -->
+      <div
+        class="container"
+        style="
+          visibility: visible;
+          max-width: 1610px !important;
+          padding-bottom: 30px;
+        "
+      >
+        <div class="row align-items-center">
+          <div
+            class="col-12"
+            style="border-top: 1px solid #bce3c9; margin-bottom: 30px"
+          >
+            <div class="footer-bottom"></div>
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-6">
+            <p class="font-sm mb-0 paragraph-at-the-bottom">
+              © 2024,
+              <strong
+                class="text-brand"
+                style="color: #3bb77e !important; font-weight: 600"
+                >Nest</strong
+              >
+              - HTML Ecommerce Template <br />All rights reserved
+            </p>
+          </div>
+          <div
+            class="col-xl-4 col-lg-6 text-center d-none d-xl-block numbers-calls"
+          >
+            <div class="hotline d-lg-inline-flex" style="margin-right: 30px">
+              <img
+                src="assets/imgs/theme/icons/phone-call.svg"
+                alt="hotline"
+                class="phone-call-img"
+              />
+              <p>1900 - 6666<span>Working 8:00 - 22:00</span></p>
+            </div>
+            <div class="hotline d-lg-inline-flex">
+              <img
+                src="assets/imgs/theme/icons/phone-call.svg"
+                alt="hotline"
+                class="phone-call-img"
+              />
+              <p>1900 - 8888<span>24/7 Support Center</span></p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-6 text-end d-none d-md-block">
+            <div
+              class="mobile-social-icon"
+              style="
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+              "
+            >
+              <h5
+                style="
+                  margin-right: 15px;
+                  font-size: 16px;
+                  font-family: 'Quicksand', sans-serif;
+                  color: #253d4e;
+                  font-weight: 700;
+                  line-height: 1.2;
+                "
+              >
+                Follow Us
+              </h5>
+              <a href="#"
+                ><img
+                  src="assets/imgs/theme/icons/icon-facebook-white.svg"
+                  alt=""
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/imgs/theme/icons/icon-twitter-white.svg"
+                  alt=""
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/imgs/theme/icons/icon-instagram-white.svg"
+                  alt=""
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/imgs/theme/icons/icon-pinterest-white.svg"
+                  alt=""
+              /></a>
+              <a href="#" style="margin-right: 0"
+                ><img
+                  src="assets/imgs/theme/icons/icon-youtube-white.svg"
+                  alt=""
+              /></a>
+            </div>
+            <p
+              class="font-sm"
+              style="
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #7e7e7e;
+                font-family: 'Lato';
+              "
+            >
+              Up to 15% discount on your first subscribe
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Preloader Start -->
+    <div id="preloader-active" style="display: none">
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+          <div class="text-center">
+            <img src="assets/imgs/theme/different_stuff/loading.gif" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <div class="footer">
+  <div class="container" style="max-width: 1610px !important;">
+      <div class="row">
+          <div class="col-md-3 footer-column">
+              <img src="/assets/imgs/theme/different_stuff/logo.svg" alt="Nest Logo" class="footer-logo">
+              <p>Awesome grocery store website template</p>
+              <ul class="contact-info">
+                  <li><img src="/assets/imgs/theme/icons/icon-location.svg" alt="Address"> 5171 W Campbell Ave undefined Kent, Utah 53127 United States</li>
+                  <li><img src="/assets/imgs/theme/icons/icon-contact.svg" alt="Call Us"> (+91) - 540-025-124553</li>
+                  <li><img src="/assets/imgs/theme/icons/icon-email-2.svg" alt="Email"> sale@Nest.com</li>
+                  <li><img src="/assets/imgs/theme/icons/icon-clock.svg" alt="Hours"> 10:00 - 18:00, Mon - Sat</li>
+              </ul>
+          </div>
+          <div class="col-1 footer-column">
+              <h5>Company</h5>
+              <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Delivery Information</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Support Center</a></li>
+                  <li><a href="#">Careers</a></li>
+              </ul>
+          </div>
+          <div class="col-1 footer-column">
+              <h5>Account</h5>
+              <ul>
+                  <li><a href="#">Sign In</a></li>
+                  <li><a href="#">View Cart</a></li>
+                  <li><a href="#">My Wishlist</a></li>
+                  <li><a href="#">Track My Order</a></li>
+                  <li><a href="#">Help Ticket</a></li>
+                  <li><a href="#">Shipping Details</a></li>
+                  <li><a href="#">Compare Products</a></li>
+              </ul>
+          </div>
+          <div class="col-1 footer-column">
+              <h5>Corporate</h5>
+              <ul>
+                  <li><a href="#">Become a Vendor</a></li>
+                  <li><a href="#">Affiliate Program</a></li>
+                  <li><a href="#">Farm Business</a></li>
+                  <li><a href="#">Farm Careers</a></li>
+                  <li><a href="#">Our Suppliers</a></li>
+                  <li><a href="#">Accessibility</a></li>
+                  <li><a href="#">Promotions</a></li>
+              </ul>
+          </div>
+          <div class="col-1 footer-column">
+              <h5>Popular</h5>
+              <ul>
+                  <li><a href="#">Milk & Flavoured Milk</a></li>
+                  <li><a href="#">Butter and Margarine</a></li>
+                  <li><a href="#">Eggs Substitutes</a></li>
+                  <li><a href="#">Marmalades</a></li>
+                  <li><a href="#">Sour Cream and Dips</a></li>
+                  <li><a href="#">Tea & Kombucha</a></li>
+                  <li><a href="#">Cheese</a></li>
+              </ul>
+          </div>
+          <div class="col-3 footer-column">
+              <h5>Install App</h5>
+              <p>From App Store or Google Play</p>
+              <div class="d-flex">
+                  <img src="/assets/imgs/theme/different_stuff/app-store.jpg" alt="App Store" width="120">
+                  <img src="/assets/imgs/theme/different_stuff/google-play.jpg" alt="Google Play" width="120">
+              </div>
+              <p class="mt-3">Secured Payment Gateways</p>
+              <div class="payment-icons">
+                  <img src="/assets/imgs/theme/different_stuff/payment-method.png" >
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+</div> -->
