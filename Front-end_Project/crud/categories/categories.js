@@ -1,25 +1,50 @@
-const URL = "http://localhost:4001/categories";
+const URL = "http://localhost:3000/categories";
+const productsURL = "http://localhost:3000/products";
 
 let categoryTable = $(".categories-table");
 let infoFromAPI = [];
 
-$(document).ready(async () => {
+$(document).ready(async (e) => {
   let result = await fetch(URL);
   let categories = await result.json();
+
+  let getProducts = await fetch(productsURL);
+  let products = await getProducts.json();
 
   infoFromAPI = categories;
 
   categoryTable.empty();
 
   categories.forEach((element) => {
+
+
+
+    let productsByCategory = products.filter(
+      (x) => x.category === element.name
+    );
+
+    // if(productsByCategory.length>0){
+    //   await fetch(`${URL}/${element.id}`, {
+    //     method: 'PATCH',
+    //     headers: {
+    //       'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify({ products_count: productsByCategory.length})
+    //   });
+    // }
+
+
     categoryTable.append(`<tr>
 	<td>${element.id}</td>
 	<td>
 		${element.name}
 	</td>
 	<td>${element.image_src}</td>
+  <td>${productsByCategory.length === 0 ? 0 : productsByCategory.length}</td>
 	<td>
-		<a href="#editSliderModal" class="edit edit-sliiders" data-toggle="modal" data-edit-slider-id=${element.id}
+		<a href="#editSliderModal" class="edit edit-sliiders" data-toggle="modal" data-edit-slider-id=${
+      element.id
+    }
 			><i
 				class="material-icons"
 				data-toggle="tooltip"
@@ -42,6 +67,7 @@ $(document).ready(async () => {
 	</td>
 </tr>
       `);
+    
   });
 
   $(".delete").click(function () {
@@ -80,7 +106,7 @@ $(".add-new-slider-form").submit(async (e) => {
   const product = Object.fromEntries(formData.entries());
   let maxId = infoFromAPI.length ? infoFromAPI[infoFromAPI.length - 1].id : 0;
   product.id = (Number(maxId) + 1).toString();
-
+  
   const response = await fetch(URL, {
     method: "POST",
     body: JSON.stringify(product),

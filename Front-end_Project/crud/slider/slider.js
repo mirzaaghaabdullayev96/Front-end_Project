@@ -1,4 +1,4 @@
-const URL = "http://localhost:4000/sliders";
+const URL = "http://localhost:3000/sliders";
 
 let slider = $(".sliders-table");
 let infoFromAPI = [];
@@ -77,14 +77,7 @@ $(".add-new-slider-form").submit(async (e) => {
     headerError.hide();
   }
 
-  const paragraph = $('input[name="paragraph"]');
-  const paragraphError = $("#paragraph-error-delete");
-  if (!paragraph.val() || paragraph.val().length > 100) {
-    paragraphError.show();
-    return;
-  } else {
-    paragraphError.hide();
-  }
+ 
 
   const formData = new FormData(e.target);
   const product = Object.fromEntries(formData.entries());

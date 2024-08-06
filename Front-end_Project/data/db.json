@@ -1,0 +1,12 @@
+{
+  "sliders": [
+    {
+      "id": "1",
+      "header": "Don't miss amazing<br>grocery deals",
+      "paragraph": "Sign up for the daily newsletter",
+      "image_src": "https://nest-frontend-v6.vercel.app/assets/imgs/slider/slider-1.png"
+    }
+  ],
+  "categories": [],
+  "products": []
+}

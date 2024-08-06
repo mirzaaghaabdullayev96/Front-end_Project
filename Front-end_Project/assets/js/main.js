@@ -1,8 +1,8 @@
 let mySliders = $("#carousel-id");
-const URL = "http://localhost:3000/sliders";
+const slidersURL = "http://localhost:3000/sliders";
 
 $(document).ready(async () => {
-  let result = await fetch(URL);
+  let result = await fetch(slidersURL);
   let sliders = await result.json();
   sliders.forEach((element) => {
     mySliders.append(`<div class="carousel-item" data-bs-interval="3500" data-slider-id=${element.id}>
