@@ -15,7 +15,7 @@ $(document).ready(async (e) => {
 
   categoryTable.empty();
 
-  categories.forEach((element) => {
+  categories.forEach(async (element) => {
 
 
 

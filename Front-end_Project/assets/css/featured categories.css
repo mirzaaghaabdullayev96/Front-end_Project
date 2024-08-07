@@ -1,0 +1,68 @@
+#my-featured-categories .my-featured-cards {
+  width: 137px;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+#my-featured-categories .section-title h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-right: 30px;
+  font-family: "Quicksand", sans-serif;
+  color: #253d4e;
+  line-height: 1.2;
+}
+
+.my-featured-cards figure {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.my-featured-cards {
+  position: relative;
+  background: #ecffec;
+  text-align: center;
+  border: 1px solid #f4f6fa;
+  border-radius: 10px;
+  padding: 20px 0px 18px 0px;
+  margin-bottom: 20px;
+  min-height: 180px;
+  transition: 0.2s;
+}
+
+.my-featured-cards h6 a {
+  color: #253d4e;
+  font-family: "Quicksand", sans-serif;
+  color: #253d4e;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 16px;
+}
+
+.my-featured-cards figure img {
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 80px;
+}
+
+.my-featured-cards span {
+  color: #7e7e7e;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#my-featured-categories .my-images-size-same{
+	width: 80px !important;
+	height: 80px !important;
+  object-fit: cover;
+}
+

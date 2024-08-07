@@ -97,7 +97,7 @@
 .icons-bar {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .location {
@@ -507,4 +507,11 @@
   padding: 15px 40px;
   font-size: 16px;
   font-family: "Quicksand";
+}
+
+
+#my-icons-top span{
+  color: #7E7E7E;
+  font-family: 'Lato';
+  font-size: 16px;
 }

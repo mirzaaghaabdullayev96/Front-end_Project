@@ -7,6 +7,72 @@
       "image_src": "https://nest-frontend-v6.vercel.app/assets/imgs/slider/slider-1.png"
     }
   ],
-  "categories": [],
-  "products": []
+  "categories": [
+    {
+      "id": "1",
+      "name": "Headphone",
+      "image_src": "./assets/imgs/shop/cat-15.png"
+    },
+    {
+      "id": "2",
+      "name": "Books",
+      "image_src": ".\\assets\\imgs\\shop\\books.jpeg"
+    },
+    {
+      "id": "3",
+      "name": "Chocolates",
+      "image_src": ".\\assets\\imgs\\products\\chocolates.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Beats",
+      "price": 12,
+      "category": "Headphone",
+      "image_src": "./assets/imgs/products/beats_headphones.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "A hero of our time",
+      "price": 5,
+      "category": "Books",
+      "image_src": "./assets/imgs/products/a_hero.jpg"
+    },
+    {
+      "id": "3",
+      "name": "10 little indians",
+      "price": 10,
+      "category": "Books",
+      "image_src": "./assets/imgs/products/10_little_indians.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Sony WH-CH520",
+      "price": 35,
+      "category": "Headphone",
+      "image_src": ".\\assets\\imgs\\products\\Sony_WH-CH520.webp"
+    },
+    {
+      "id": "5",
+      "name": "Ritter sport",
+      "price": 4,
+      "category": "Chocolates",
+      "image_src": ".\\assets\\imgs\\products\\chololate_ritter.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Ferrero Rocher",
+      "price": 14,
+      "category": "Chocolates",
+      "image_src": ".\\assets\\imgs\\products\\ferrero_rocher.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Bounty",
+      "price": 2,
+      "category": "Chocolates",
+      "image_src": ".\\assets\\imgs\\products\\bounty-bar-source-supplied-212836-2.webp"
+    }
+  ]
 }

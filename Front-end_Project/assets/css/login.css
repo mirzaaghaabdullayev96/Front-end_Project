@@ -1,0 +1,78 @@
+#main-container .row {
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+ 
+}
+
+
+
+
+#main-container .col-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.my-button {
+  padding: 30px;
+  font-size: 40px;
+  min-width: 300px;
+  animation: pulse 1.5s infinite;
+  background-color: black!important;
+  font-family: 'Quicksand';
+  border-color: black !important;
+}
+
+#main-container h1{
+  text-align: center;
+  color: rgb(255, 255, 255,1);
+  padding-top: 100px;
+  font-size: 100px;
+  font-weight: 800;
+  }
+
+
+#main-container a{
+margin-top: -200px !important;
+}
+
+
+body {
+	background: linear-gradient(-45deg, #03db20, #a79fd7, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+@keyframes pulse {
+  0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	60% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}

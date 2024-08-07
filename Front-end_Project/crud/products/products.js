@@ -1,6 +1,6 @@
 const URL = "http://localhost:3000/products";
 const categoriesURL = "http://localhost:3000/categories";
-let selectOptions=$(".my-select-options");
+let selectOptions = $(".my-select-options");
 
 let productTable = $(".products-table");
 let infoFromAPI = [];
@@ -19,16 +19,17 @@ $(document).ready(async () => {
     .then((data) => data.json())
     .then((x) => (categories = x));
 
-  categories.forEach(element=>{
-   selectOptions.append(`<option value="${element.name}">${element.name}</option>`)
-  })
+  categories.forEach((element) => {
+    selectOptions.append(
+      `<option value="${element.name}">${element.name}</option>`
+    );
+  });
 
   infoFromAPI = products;
 
   productTable.empty();
 
   products.forEach((element) => {
-    
     productTable.append(`<tr>
 	<td>${element.id}</td>
 	<td>
@@ -76,8 +77,13 @@ $(document).ready(async () => {
       (x) => x.id == $(this).data("edit-slider-id")
     );
     const form = $(".edit-slider-form");
+
     Object.entries(foundSlider).forEach(([key, value]) => {
-      form.find(`input[name="${key}"]`).val(value);
+      if (key === "category") {
+        form.find(`select[name="${key}"]`).val(value);
+      } else {
+        form.find(`input[name="${key}"]`).val(value);
+      }
     });
   });
 });
@@ -119,6 +125,16 @@ $(".add-new-slider-form").submit(async (e) => {
   let maxId = infoFromAPI.length ? infoFromAPI[infoFromAPI.length - 1].id : 0;
   product.id = (Number(maxId) + 1).toString();
   product.price = Number(product.price);
+
+  // if(productsByCategory.length>0){
+  //   await fetch(`${URL}/${element.id}`, {
+  //     method: 'PATCH',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify({ products_count: productsByCategory.length})
+  //   });
+  // }
 
   const response = await fetch(URL, {
     method: "POST",
@@ -178,7 +194,7 @@ $(".edit-slider-form").submit(async (e) => {
     foundSlider[key] = value;
   });
 
-  foundSlider.price=Number(foundSlider.price)
+  foundSlider.price = Number(foundSlider.price);
 
   await fetch(`${URL}/${sliderId}`, {
     method: "PUT",

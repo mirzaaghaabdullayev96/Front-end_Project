@@ -1,0 +1,230 @@
+#daily-best-sells .section-title {
+  display: flex;
+  align-items: end;
+  margin-bottom: 44px;
+  position: relative;
+  justify-content: space-between;
+}
+
+#daily-best-sells .section-title h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-right: 30px;
+  font-family: "Quicksand", sans-serif;
+  color: #253d4e;
+  line-height: 1.2;
+}
+
+#daily-best-sells ul {
+  border: 0;
+  margin-bottom: 4px;
+}
+
+#daily-best-sells .nav-tabs.links .nav-link {
+  padding: 0 10px;
+  background: none;
+  font-size: 16px;
+  color: #253d4e;
+  border: none;
+}
+
+#daily-best-sells .nav-tabs.links .nav-link.active {
+  color: #3bb77e;
+  padding: 0 10px;
+  background: none;
+  font-size: 16px;
+  border: none;
+}
+
+#banner-green-at-bottom {
+  border-radius: 15px;
+  overflow: hidden;
+  height: 520px;
+  background: url(/assets/imgs/banners/banner-4.png) no-repeat center bottom;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  clear: both;
+}
+
+#daily-best-sells .banner-img.style-2 .banner-text {
+  top: 50px;
+  transform: none;
+  position: absolute;
+  z-index: 2;
+  padding: 0 50px;
+}
+
+#banner-green-at-bottom h2 {
+  font-size: 40px;
+  margin-bottom: 100px !important;
+  font-family: "Quicksand", sans-serif;
+  color: #253d4e;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#btn-shop-now-green {
+  padding: 7px 8px 7px 12px;
+  font-size: 12px;
+  text-transform: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  line-height: 1.3;
+  font-weight: 700;
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid transparent;
+  background-color: #3bb77e;
+  cursor: pointer;
+  transition: all 300ms linear 0s;
+  letter-spacing: 0.5px;
+  font-family: "Quicksand", sans-serif;
+}
+
+#daily-best-sells .product-cart-wrap {
+  margin-bottom: 20px;
+  margin-right: 12px;
+  margin-left: 12px;
+  width: 278px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ececec;
+  border-radius: 15px;
+  overflow: hidden;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+#daily-best-sells .product-cart-wrap .product-img-action-wrap {
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  max-height: 320px;
+  padding: 25px 25px 0 25px;
+}
+
+#daily-best-sells
+  .product-cart-wrap
+  .product-img-action-wrap
+  .product-img
+  a
+  img {
+  width: 100%;
+  max-width: 100%;
+}
+
+#daily-best-sells .product-cart-wrap .product-content-wrap {
+  padding: 0 20px 20px 20px;
+}
+
+#daily-best-sells .product-cart-wrap .product-content-wrap .product-category {
+  margin-bottom: 5px;
+}
+
+#daily-best-sells .product-cart-wrap .product-content-wrap .product-category a {
+  color: #adadad;
+  font-size: 12px;
+  font-family: 'Lato';
+  line-height: 24px;
+}
+
+#daily-best-sells .product-cart-wrap .product-content-wrap h2 a {
+  color: #253d4e;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#daily-best-sells .product-rate {
+  background-image: url(../imgs/theme/different_stuff/rating-stars.png);
+  background-position: 0 -12px;
+  background-repeat: repeat-x;
+  height: 12px;
+  width: 60px;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.5s ease-out 0s;
+}
+
+#daily-best-sells .product-rating {
+  height: 12px;
+  background-repeat: repeat-x;
+  background-image: url(../imgs/theme/different_stuff/rating-stars.png);
+  background-position: 0 0;
+  width: 80%;
+}
+
+#daily-best-sells .product-cart-wrap .product-content-wrap .product-price {
+  padding-top: 5px;
+}
+
+#daily-best-sells .product-price {
+  font-family: "Quicksand", sans-serif;
+}
+
+#daily-best-sells .mt-10 {
+  margin-top: 10px !important;
+}
+
+#daily-best-sells .product-cart-wrap .product-content-wrap .product-price span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3bb77e;
+}
+
+#daily-best-sells
+  .product-cart-wrap
+  .product-content-wrap
+  .product-price
+  span.old-price {
+  font-size: 14px;
+  color: #adadad;
+  margin: 0 0 0 7px;
+  text-decoration: line-through;
+}
+
+#daily-best-sells .mt-15 {
+  margin-top: 15px !important;
+}
+
+#daily-best-sells .mb-15 {
+  margin-bottom: 15px !important;
+}
+
+#daily-best-sells .product-cart-wrap .progress {
+  height: 5px;
+}
+
+#daily-best-sells .mb-5 {
+  margin-bottom: 5px !important;
+}
+
+#daily-best-sells .text-heading {
+  color: #253d4e;
+}
+
+#daily-best-sells .font-xs {
+  font-size: 13px;
+}
+
+#daily-best-sells .btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #3bb77e;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  font-family: "Quicksand", sans-serif;
+  width: 100% !important;
+}
+
+#daily-best-sells .progress-bar {
+  background-color: #3bb77e;
+}
+
+
